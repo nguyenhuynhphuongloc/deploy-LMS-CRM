@@ -1,0 +1,70 @@
+@import "./vars.css";
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .table {
+    display: block;
+  }
+}
+
+span.field-label {
+  display: flex;
+  color: var(--theme-elevation-800);
+  font-family: var(--font-body);
+}
+
+span.field-label .required {
+  margin-left: 5px;
+  color: var(--theme-error-500);
+}
+
+a.app-header__account {
+  text-decoration: none !important;
+}
+div.nav__link-wrapper {
+  padding-left: 12px;
+  padding-right: 12px;
+  border-radius: 6px;
+}
+div.nav__link-wrapper:hover .nav__pin-btn {
+  color: white !important;
+  transition: all 0.3s ease-in-out;
+}
+
+a.nav__link:hover {
+  background: linear-gradient(
+    to right,
+    rgba(231, 41, 41, 0.7) 0%,
+    rgba(231, 41, 41, 1) 100%
+  ) !important;
+  color: white !important;
+  padding: 12px;
+}
+a.nav__link--active {
+  background: linear-gradient(
+    to right,
+    rgba(231, 41, 41, 0.7) 0%,
+    rgba(231, 41, 41, 1) 100%
+  ) !important;
+  color: white !important;
+  padding: 12px;
+}
+.nav__link--active .nav__link-icon {
+  transition: all 0.3s ease-in-out;
+  color: white !important;
+}
+.nav__link:hover .nav__link-icon {
+  transition: all 0.3s ease-in-out;
+  color: white !important;
+}
+.nav__pin-btn:hover {
+  transition: all 0.3s ease-in-out;
+  color: white !important;
+}
+a.nav__link {
+  font-size: 15px;
+  font-family: var(--font-outfit);
+  transition: all 0.3s ease-in-out;
+  border-radius: 6px;
+}
